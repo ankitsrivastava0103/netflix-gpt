@@ -17,3 +17,24 @@ export const API_OPTIONS = {
 };
 
 export const IMG_CDN = "https://image.tmdb.org/t/p/w500/";
+
+export const LANG_CONST = {
+  english: {
+    search: "Search",
+    placeholder: "What would you like to watch ?",
+  },
+  hindi: {
+    search: "खोज",
+    placeholder: "आप क्या देखना चाहेंगे ?",
+  },
+  spanish: {
+    search: "Buscar",
+    placeholder: "¿Qué te gustaría ver ?",
+  },
+};
+
+export const SUPPORTED_LANGUAGES = [
+  { name: "english" },
+  { name: "hindi" },
+  { name: "spanish" },
+];
