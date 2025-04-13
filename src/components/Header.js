@@ -14,6 +14,7 @@ const Header = () => {
 
   const user = useSelector((store) => store.user.userInfo);
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+  const languageKey = useSelector((store) => store.config.language);
 
   const handleSigoutClick = () => {
     signOut(auth)
@@ -61,6 +62,7 @@ const Header = () => {
             <select
               className="p-2 bg-gray-900 text-white m-2"
               onChange={handleLanguageChange}
+              value={languageKey}
             >
               {SUPPORTED_LANGUAGES.map((lang) => {
                 return (
