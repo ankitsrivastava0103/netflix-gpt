@@ -46,10 +46,10 @@ const GptSearchBar = () => {
 
   return (
     <div
-      className="pt-[10%] flex justify-center"
+      className="pt-[40%] md:pt-[10%] flex justify-center"
       onSubmit={handleGptSearchClick}
     >
-      <form className="w-1/2  grid grid-cols-12">
+      <form className="w-full md:w-1/2  grid grid-cols-12">
         <input
           ref={searchText}
           className="p-4 m-4 bg-white col-span-9"

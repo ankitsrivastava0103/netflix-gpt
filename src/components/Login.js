@@ -84,10 +84,10 @@ const Login = () => {
     <div className="w-screen h-screen">
       <Header />
       <div className="absolute">
-        <img src={BG_IMG} alt="Logo" />
+        <img className="h-screen object-cover" src={BG_IMG} alt="Logo" />
       </div>
       <form
-        className="w-4/12 absolute p-12 bg-black text-white my-36 mx-auto right-0 left-0 flex flex-col rounded-lg opacity-85"
+        className="w-full md:w-4/12 absolute p-12 bg-black text-white my-36 mx-auto right-0 left-0 flex flex-col rounded-lg opacity-85"
         onSubmit={handleSubmitClick}
       >
         <h1 className="font-bold text-3xl py-4 my-2">
